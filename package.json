@@ -1,0 +1,38 @@
+{
+  "name": "instrument-context-module",
+  "version": "0.1.0",
+  "author": "Neal Granger <neal@nealg.com>",
+  "main": "instrument-context-module.js",
+  "scripts": {
+    "clean": "rm *.js && rm *.map",
+    "build": "./node_modules/.bin/babel -s -d . src",
+    "prepublish": "npm run clean && npm run build",
+    "lint": "./node_modules/.bin/eslint src",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webpack-config/instrument-context-module.git"
+  },
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/webpack-config/instrument-context-module/issues"
+  },
+  "homepage": "https://github.com/webpack-config/instrument-context-module#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-preset-metalab": "^1.0.0",
+    "babel-runtime": "^6.23.0",
+    "eslint": "^3.17.1",
+    "eslint-config-metalab": "^6.0.1",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-lodash-fp": "^2.0.1",
+    "eslint-plugin-react": "^6.10.0"
+  },
+  "dependencies": {
+    "regexp-clone": "^0.0.1"
+  }
+}
